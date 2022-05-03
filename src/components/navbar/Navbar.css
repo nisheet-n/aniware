@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;600&display=swap');
+
+.navbar{
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.nav{
+	display: flex;
+	padding: 3rem 8rem;
+}
+
+.nav-title a{
+	text-decoration: none;
+	color: #000;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.nav-links{
+	display: flex;
+	align-items: center;
+
+}
+
+.nav-links a{
+	text-decoration: none;
+	font-size:1.15rem;
+	color: #fff;
+	margin-left: 3rem;
+	opacity: 70%;
+}
+
+.nav-links a:hover{
+	opacity: 100%;
+}
+
+.nav-lists{
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.nav-lists a{
+	text-decoration: none;
+	font-size:1.15rem;
+	color: #fff;
+	margin-left: 3rem;
+	opacity: 50%;
+}
+
+.nav-lists a:hover{
+	opacity: 75%;
+}
+
+.anime-search{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3rem;
+}
+
+.search-bar{
+	width: 50%;
+	outline: 0;
+	border: 0;
+	border-bottom: 2px solid rgba(255,255,255,0.3);
+	padding: 8px 0;
+	background: transparent;
+	font-size: 1.5rem;
+	color: rgba(0,0,0,0.6);
+	transition: border-color 0.2s;
+}
+
+.search-bar::placeholder{
+	color: rgba(255,255,255,0.3);
+}
