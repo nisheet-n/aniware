@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import axios from 'axios';
 
-import "./Popular.css"
+import "./Latest.css"
 import Navbar from "../../navbar/Navbar"
-import PopularCard from "./PopularCard"
+import LatestCard from "./LatestCard"
 
-function Popular() {
+function Latest() {
      useEffect(() => {
           getAnime();
      }, []);
@@ -14,7 +14,7 @@ function Popular() {
 
      const getAnime = async () => {
           try {
-               const response = await axios.get("https://gogoanime.herokuapp.com/popular");
+               const response = await axios.get("https://gogoanime.herokuapp.com/recent-release");
                setAnimeData(response.data);
           }
           catch (err) {
@@ -25,10 +25,10 @@ function Popular() {
      return (
           <div>
                <Navbar />
-               <div className="popular-rows">
+               <div className="latest-rows">
                     {
                          animeData.map((anime) => (
-                              < PopularCard key={anime.animeid} title={anime.animeTitle} year={anime.releasedDate} poster={anime.animeImg} url={anime.animeId} />
+                              < LatestCard key={anime.episodeId} episodeTitle={anime.animeTitle} episodeNum={anime.episodeNum} subOrDub={anime.subOrDub} poster={anime.animeImg} url={anime.episodeUrl} />
                          ))
                     }
                </div>
@@ -36,4 +36,4 @@ function Popular() {
      )
 }
 
-export default Popular
+export default Latest

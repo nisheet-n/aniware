@@ -1,14 +1,16 @@
 import "./PopularCard.css"
 
-function PopularCard({ title, year, poster }) {
+function PopularCard({ title, year, poster, url }) {
      var length = 30;
      var finalTitle = title.substring(0, length);
      if (title.length > length) {
           finalTitle = finalTitle + "..."
      }
 
+     const finalUrl = "/anime/" + url;
+
      return (
-          <div className="popular-card" >
+          <a className="popular-card" href={finalUrl} rel="noopener noreferrer">
                <div className="popular-poster">
                     <img src={poster} alt="poster" />
                </div>
@@ -21,7 +23,7 @@ function PopularCard({ title, year, poster }) {
                          {/* <div className="popular-episodes">{episodes}</div> */}
                     </div>
                </div>
-          </div >
+          </a >
      )
 }
 

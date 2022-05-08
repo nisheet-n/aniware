@@ -8,10 +8,10 @@ function Navbar() {
 
                     <div className="nav-links">
                          <div>
-                              <a href="/popular">Popular</a>
+                              <a href="/latest">Latest</a>
                          </div>
                          <div>
-                              <a href="/latest">Latest</a>
+                              <a href="/popular">Popular</a>
                          </div>
                     </div>
 

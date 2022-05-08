@@ -1,27 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;600&display=swap');
 
-.popular-card{
+.latest-card{
 	-webkit-transition: .25s all;  
 	-moz-transition: .25s all;   
 	-ms-transition: .25s all;   
 	-o-transition: .25s all;   
 	transition: .25s all;   
 
-	text-decoration: none;
+     display: flex;
 	font-family: 'Noto Sans', sans-serif;
 	background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.25));
 	color: #fff;
-	width: 175px;
-	height: 275px;
+     text-decoration: none;
+	width: 300px;
+	height: 150px;
 	margin: 12.5px;
 	padding: 12.5px;
 	border: 1px solid rgba(255, 255, 255, 0.25);
-	border-radius: 0 0 25px 0;
+	border-radius: 5px;
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
 	backdrop-filter:blur(5px);
 }
 
-.popular-card:hover{
+.latest-card:hover{
 	cursor: pointer;
 	padding: 15px;
 	margin: 10px;
@@ -31,44 +32,44 @@
 	backdrop-filter:blur(10px);
 }
 
-.popular-poster{
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-	width: 175px;
-	height: 200px;
-	margin-bottom: 2px;
+.latest-poster{
+  	margin-left: 0;
+  	margin-right: 20px;
+	width: 125px;
+	height: 150px;
 }
 
-.popular-poster img{
-	width:100%;
+.latest-poster img{
+     max-width: 100px;
 	height:100%;
-	border-radius: 5px;
-	object-fit: cover;
+	border-radius: 2.5px;
+	object-fit:cover;
 }
 
-.popular-title{
+.latest-info{
+     margin-right: 0;
+     margin-left: auto;
+     width: 350px;
+}
+
+.latest-title{
+	height: 75px;
+	padding: 10px 0;
+	font-weight: bold;
+     font-size: 0.9rem;
+}
+
+.latest-footer{
 	display: flex;
-	align-items: center;
-	height: 50px;
+     align-items: center;
+     margin-top: 20px;
+}
+
+.latest-subdub{
+     margin-left: auto;
+     margin-right: 0;
+     text-align: right;
 	font-weight: bolder;
-	margin-bottom: 2px;
+     font-size: 1.1rem;
+	opacity: 50%;
 }
-
-.popular-release{
-	display: flex;
-	flex-direction: row;
-	margin-top: 5px;
-}
-
-.popular-year{
-	margin-left: 0;
-	opacity: 75%;
-}
-
-/* .popular-episodes{
-	margin-left: auto;
-	margin-right: 0;
-	font-weight: bolder;
-	opacity: 40%;
-} */
