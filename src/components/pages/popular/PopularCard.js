@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./PopularCard.css"
 
 function PopularCard({ title, year, poster, url }) {
@@ -7,10 +9,8 @@ function PopularCard({ title, year, poster, url }) {
           finalTitle = finalTitle + "..."
      }
 
-     const finalUrl = "/anime/" + url;
-
      return (
-          <a className="popular-card" href={finalUrl} rel="noopener noreferrer">
+          <Link to={`/anime/${url}`} className="popular-card" >
                <div className="popular-poster">
                     <img src={poster} alt="poster" />
                </div>
@@ -23,7 +23,7 @@ function PopularCard({ title, year, poster, url }) {
                          {/* <div className="popular-episodes">{episodes}</div> */}
                     </div>
                </div>
-          </a >
+          </Link >
      )
 }
 
