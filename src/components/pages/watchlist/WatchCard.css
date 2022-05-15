@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;600&display=swap');
+
+.watch-card{
+	font-family: 'Noto Sans', sans-serif;
+	background: #EDEDED;
+	width: 350px;
+	height: 200px;
+	padding: 12.5px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 5px 1px #aaaaaa;
+	margin: 8px;
+}
+
+.watch-poster{
+	display: block;
+  	margin-left: left;
+  	margin-right: auto;
+	width: 200px;
+	height: 215px;
+	margin-bottom: 10px;
+	flex-direction: row;
+	/* padding-bottom: 100px;*/
+} 
+
+.watch-poster img{
+	width:90%;
+	height:90%;
+	border-radius: 5px;
+	object-fit: cover;
+	flex-direction: row;
+	padding: 0px;
+	/* padding-bottom: 100px; */
+}
+
+.watch-info{
+	margin-top: -65%;
+	padding-bottom: 100px;
+}
+
+.watch-date{
+	margin-left: 260px;
+	font-weight: auto;
+	opacity: 30%;
+	height: 40px;
+	
+}
+
+.watch-title{
+	display: flex;
+	align-items: right;
+	height: 50px; 
+	font-weight: bolder;
+	margin-bottom: auto;
+	margin-left: 60%;
+	font-size: medium;
+	flex-direction: row;
+}
+
+.watch-genre{
+	display: flex;
+	align-items: right;
+	font-size: x-small;
+	height: 50px;
+	opacity: 50;
+	margin-left: 60%;
+	flex-direction: row;
+}
+
+.watch-release{
+	display: flex;
+	flex-direction: row;
+	margin-top: 5px;
+	flex-direction: row;
+}
+
+.watch-year{
+	margin-left: 60%;
+	font-weight: bolder;
+	opacity: 30%;
+	height: 30px;
+	font-size: smaller;
+	flex-direction: row;
+
+}
+
+.watch-episodes{
+	margin-left: auto;
+	margin-right: 0;
+	font-weight: bolder;
+	opacity: 30%;
+	font-size: smaller;
+	flex-direction: row;
+	
+}
+
+.watch-status{
+	margin-left: 265px;
+	display: flex;
+	align-items: right;
+	height: 30px; 
+	font-weight: bolder;
+	margin-bottom: auto;
+    opacity: 65%;
+	flex-direction: row;
+}
