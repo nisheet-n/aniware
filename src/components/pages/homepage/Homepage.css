@@ -1,13 +1,3 @@
-body{
-	background-image: url(./background.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-}
-
-.popular-rows{
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	width:auto;
+.homepage {
+	padding: 0 2rem;
 }

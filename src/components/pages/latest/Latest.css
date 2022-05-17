@@ -1,6 +1,15 @@
-.latest-rows{
+.latest-page {
+	padding: 0 2rem;
+}
+
+.latest-heading {
+	padding: 1rem 0;
+	font-weight: bolder;
+}
+
+.latest-rows {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	width:auto;
+	width: auto;
 }

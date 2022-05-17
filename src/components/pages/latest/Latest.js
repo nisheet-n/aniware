@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import axios from 'axios';
 
 import "./Latest.css"
-import Navbar from "../../navbar/Navbar"
 import LatestCard from "./LatestCard"
 
 function Latest() {
@@ -23,8 +22,8 @@ function Latest() {
      };
 
      return (
-          <div>
-               <Navbar />
+          <div className="latest-page">
+               <h1 className="latest-heading">Latest Releases</h1>
                <div className="latest-rows">
                     {
                          animeData.map((anime) => (

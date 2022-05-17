@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import axios from 'axios';
 
 import "./Popular.css"
-import Navbar from "../../navbar/Navbar"
 import PopularCard from "./PopularCard"
 
 function Popular() {
@@ -23,8 +22,8 @@ function Popular() {
      };
 
      return (
-          <div>
-               <Navbar />
+          <div className="popular-page">
+               <h1 className="popular-heading">Popular Animes</h1>
                <div className="popular-rows">
                     {
                          animeData.map((anime) => (

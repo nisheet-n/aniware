@@ -2,7 +2,6 @@ import axios from "axios"
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import Navbar from "../../navbar/Navbar";
 import './AnimeInfo.css'
 
 function AnimeInfo() {
@@ -27,57 +26,53 @@ function AnimeInfo() {
      const isSaved = 0;
 
      return (
-          <div>
-               <Navbar />
+          <div className="anime-info">
+               <div className="anime-header">
+                    <div className="anime-background" ></div>
 
-               <div className="anime-info">
-                    <div className="anime-header">
-                         <div className="anime-background" ></div>
-
-                         <div className="anime-title-type">
-                              <h1 className="anime-title">{animeData.animeTitle}</h1>
-                              <p className="anime-type">{animeData.type}</p>
-                         </div>
-
-                         <img src={animeData.animeImg} alt={url} className="anime-poster" />
+                    <div className="anime-title-type">
+                         <h1 className="anime-title">{animeData.animeTitle}</h1>
+                         <p className="anime-type">{animeData.type}</p>
                     </div>
 
-                    <div className="anime-details">
-                         <div className="anime-status-bar">
-                              <p className="anime-episodes">Episodes: {animeData.totalEpisodes}</p>
-                              <p className="anime-status">{animeData.status}</p>
+                    <img src={animeData.animeImg} alt={url} className="anime-poster" />
+               </div>
 
-                              {isSaved
-                                   ? <i className="fa fa-bookmark"></i>
-                                   : <i className="fa fa-bookmark-o"></i>
-                              }
-                         </div>
+               <div className="anime-details">
+                    <div className="anime-status-bar">
+                         <p className="anime-episodes">Episodes: {animeData.totalEpisodes}</p>
+                         <p className="anime-status">{animeData.status}</p>
 
-                         <div className="anime-genres">
-                              {
-                                   genres.map((genre) => (
-                                        <p className="genre">{genre} |</p>
-                                   ))
-                              }
-                         </div>
+                         {isSaved
+                              ? <i className="fa fa-bookmark"></i>
+                              : <i className="fa fa-bookmark-o"></i>
+                         }
+                    </div>
 
-                         <p className="anime-desc"><strong>"</strong>{animeData.synopsis}<strong>"</strong></p>
-                         <p className="anime-year">Released: {animeData.releasedDate}</p>
+                    <div className="anime-genres">
+                         {
+                              genres.map((genre) => (
+                                   <p className="genre">{genre} |</p>
+                              ))
+                         }
+                    </div>
 
-                         <hr />
+                    <p className="anime-desc"><strong>"</strong>{animeData.synopsis}<strong>"</strong></p>
+                    <p className="anime-year">Released: {animeData.releasedDate}</p>
 
-                         <p className="anime-names"><strong>Other Names:</strong><br /><em>{animeData.otherNames}</em></p>
+                    <hr />
 
-                         <div className="episode-list">
-                              {
-                                   episodes.map((episode) => (
-                                        <a href={episode.episodeUrl} target="_blank" rel="noopener noreferrer" className="episode">EP {episode.episodeNum}</a>
-                                   ))
-                              }
-                         </div>
+                    <p className="anime-names"><strong>Other Names:</strong><br /><em>{animeData.otherNames}</em></p>
+
+                    <div className="episode-list">
+                         {
+                              episodes.map((episode) => (
+                                   <a href={episode.episodeUrl} target="_blank" rel="noopener noreferrer" className="episode">EP {episode.episodeNum}</a>
+                              ))
+                         }
                     </div>
                </div>
-          </div >
+          </div>
      )
 }
 

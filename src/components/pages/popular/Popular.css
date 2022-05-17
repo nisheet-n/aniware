@@ -1,6 +1,14 @@
-.popular-rows{
+.popular-page {
+	padding: 0 2rem;
+}
+
+.popular-heading {
+	padding: 1rem 0;
+	font-weight: bolder;
+}
+
+.popular-rows {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	flex-wrap: wrap;
-	width:auto;
 }

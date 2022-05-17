@@ -1,10 +1,8 @@
-import Navbar from "../../navbar/Navbar"
 import "./Homepage.css"
 
 function Homepage() {
      return (
-          <div>
-               <Navbar />
+          <div className="homepage">
                Homepage
           </div>
      )
