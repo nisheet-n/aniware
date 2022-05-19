@@ -12,16 +12,12 @@ function PopularCard({ title, year, poster, url }) {
      return (
           <Link to={`/anime/${url}`} className="popular-card" >
                <div className="popular-poster">
-                    <img src={poster} alt="poster" />
+                    <img src={poster} alt={`${url}-poster`} />
                </div>
 
                <div className="popular-info">
                     <div className="popular-title">{finalTitle}</div>
-
-                    <div className="popular-release">
-                         <div className="popular-year">{year}</div>
-                         {/* <div className="popular-episodes">{episodes}</div> */}
-                    </div>
+                    <div className="popular-year">{year}</div>
                </div>
           </Link >
      )

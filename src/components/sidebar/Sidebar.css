@@ -2,7 +2,7 @@
      height: 100vh;
      width: 5rem;
      padding: 0 0.5rem;
-     border-right: 1.5px solid #303143;
+     border-right: 0.1rem solid #303143;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -16,6 +16,12 @@ a {
 }
 
 svg {
+     -webkit-transition: .25s all;
+     -moz-transition: .25s all;
+     -ms-transition: .25s all;
+     -o-transition: .25s all;
+     transition: .25s all;
+
      fill: white;
      cursor: pointer;
      padding: 0.75rem;
@@ -25,13 +31,14 @@ svg {
 }
 
 svg:hover {
+     -webkit-transition: .25s all;
+     -moz-transition: .25s all;
+     -ms-transition: .25s all;
+     -o-transition: .25s all;
+     transition: .25s all;
+
      fill: #2D2F3E;
      background: white;
-     -webkit-transition: .5s all;
-     -moz-transition: .5s all;
-     -ms-transition: .5s all;
-     -o-transition: .5s all;
-     transition: .5s;
 }
 
 .sidebar-top {
@@ -40,7 +47,7 @@ svg:hover {
      align-items: center;
      margin: 0 0 auto 0;
      padding: 1rem 0;
-     border-bottom: 1.5px solid #303143;
+     border-bottom: 0.1rem solid #303143;
 }
 
 .toggle-icon {
@@ -68,5 +75,5 @@ svg:hover {
      align-items: center;
      justify-content: flex-end;
      padding: 1rem 0;
-     border-top: 1.5px solid #303143;
+     border-top: 0.1rem solid #303143;
 }

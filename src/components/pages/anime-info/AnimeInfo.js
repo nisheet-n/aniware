@@ -62,7 +62,8 @@ function AnimeInfo() {
 
                     <hr />
 
-                    <p className="anime-names"><strong>Other Names:</strong><br /><em>{animeData.otherNames}</em></p>
+                    <p className="anime-names"><strong>Other Names:</strong></p>
+                    <p className="anime-names">{animeData.otherNames}</p>
 
                     <div className="episode-list">
                          {

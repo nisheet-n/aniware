@@ -1,9 +1,10 @@
 .popular-page {
 	padding: 0 2rem;
+	margin-bottom: 1.5rem;
 }
 
 .popular-heading {
-	padding: 1rem 0;
+	padding: 0.5rem 0;
 	font-weight: bolder;
 }
 

@@ -4,7 +4,7 @@ function Navbar() {
      return (
           <div className="navbar">
                <div className="nav-search">
-                    <input type="input" class="search-bar" placeholder="Search" name="nsearchme" id='search' />
+                    <input type="input" className="search-bar" placeholder="Search" name="nsearchme" id='search' />
                </div>
 
                <div className="nav-links">
