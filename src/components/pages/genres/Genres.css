@@ -1,0 +1,39 @@
+.genre-page {
+     padding: 0 2rem;
+     margin-bottom: 1.5rem;
+}
+
+.genre-heading {
+     padding: 0.5rem 0;
+     font-weight: bolder;
+}
+
+.genres {
+     display: flex;
+     flex-wrap: wrap;
+     margin-top: 0.5rem;
+}
+
+.genre {
+     cursor: pointer;
+     width: 10rem;
+     height: 3rem;
+     font-size: 1rem;
+     text-decoration: none;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     text-transform: capitalize;
+     margin: 0 1rem 1rem 0;
+     border-radius: 0.25rem;
+     border: 0.1rem solid transparent;
+     background: #2D2F3E;
+     color: rgba(255, 255, 255, 0.75);
+}
+
+.genre:hover {
+     font-weight: bolder;
+     color: white;
+     border: 0.1rem solid white;
+}

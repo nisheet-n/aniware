@@ -1,0 +1,66 @@
+.genre-anime-card {
+     text-decoration: none;
+     color: #fff;
+     width: 12.5rem;
+     margin: 1rem 0.25rem;
+     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(5px);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.genre-anime-card:hover {
+     cursor: pointer;
+}
+
+.genre-anime-poster {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 12.5rem;
+     height: 17.5rem;
+}
+
+.genre-anime-poster img {
+     -webkit-transition: .25s all;
+     -moz-transition: .25s all;
+     -ms-transition: .25s all;
+     -o-transition: .25s all;
+     transition: .25s all;
+
+     width: 90%;
+     height: 90%;
+     border-radius: 0.25rem;
+     object-fit: cover;
+}
+
+.genre-anime-poster img:hover {
+     -webkit-transition: .25s all;
+     -moz-transition: .25s all;
+     -ms-transition: .25s all;
+     -o-transition: .25s all;
+     transition: .25s all;
+
+     width: 100%;
+     height: 100%;
+     background-color: black;
+     opacity: 0.5;
+}
+
+.genre-anime-info {
+     padding: 0 0.5rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+}
+
+.genre-anime-title {
+     height: 3rem;
+     font-weight: bolder;
+}
+
+.genre-anime-year {
+     opacity: 50%;
+}

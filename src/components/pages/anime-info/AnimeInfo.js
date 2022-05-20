@@ -52,7 +52,7 @@ function AnimeInfo() {
                     <div className="anime-genres">
                          {
                               genres.map((genre) => (
-                                   <p className="genre">{genre} |</p>
+                                   <a href={`/genre/${genre.split(' ').join('-')}`} rel="noopener noreferrer" className="anime-genre">{genre} |</a>
                               ))
                          }
                     </div>

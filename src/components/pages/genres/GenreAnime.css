@@ -1,0 +1,14 @@
+.genre-results-page {
+     padding: 0 2rem;
+     margin-bottom: 1.5rem;
+}
+
+.genre-results-heading {
+     padding: 0.5rem 0;
+}
+
+.genre-results-rows {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}

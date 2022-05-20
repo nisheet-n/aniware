@@ -6,6 +6,8 @@ import Homepage from "./components/pages/homepage/Homepage";
 import Popular from "./components/pages/popular/Popular";
 import Latest from "./components/pages/latest/Latest";
 import AnimeInfo from "./components/pages/anime-info/AnimeInfo";
+import Genres from "./components/pages/genres/Genres";
+import GenreAnime from "./components/pages/genres/GenreAnime";
 
 function App() {
 	return (
@@ -19,6 +21,8 @@ function App() {
 						<Route path="/latest" element={<Latest />} />
 						<Route path="/popular" element={<Popular />} />
 						<Route path="/anime/*" element={<AnimeInfo />} />
+						<Route path="/genres/" element={<Genres />} />
+						<Route path="/genre/*" element={<GenreAnime />} />
 					</Routes>
 				</BrowserRouter>
 			</div>
