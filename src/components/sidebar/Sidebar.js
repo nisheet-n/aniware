@@ -19,27 +19,22 @@ function Sidebar() {
                          </g>
                     </svg>
 
-                    <a href="/">
-                         <svg className="home-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 385 385">
-                              <g id="Group_2" data-name="Group 2" transform="translate(-4457 -1753)">
-                                   <g id="Group_1" data-name="Group 1" transform="translate(0 107)">
+                    <a href="/search">
+                         <svg className="search-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 385 385">
+                              <g id="Group_3" data-name="Group 3" transform="translate(-4334 -1665)">
+                                   <g id="Group_1" data-name="Group 1" transform="translate(-123 19)">
                                         <rect id="Rectangle_12" data-name="Rectangle 12" width="385" height="385" transform="translate(4457 1646)" fill="none" />
                                    </g>
-                                   <g id="XMLID_16_" transform="translate(4457 1753)">
-                                        <path id="XMLID_17_" d="M224.167,0H187.5A27.5,27.5,0,0,0,160,27.5V64.167a27.5,27.5,0,0,0,27.5,27.5h36.667a27.5,27.5,0,0,0,27.5-27.5V27.5A27.5,27.5,0,0,0,224.167,0Z" transform="translate(133.333)" />
-                                        <path id="XMLID_18_" d="M144.167,0H107.5A27.5,27.5,0,0,0,80,27.5V64.167a27.5,27.5,0,0,0,27.5,27.5h36.667a27.5,27.5,0,0,0,27.5-27.5V27.5A27.5,27.5,0,0,0,144.167,0Z" transform="translate(66.667)" />
-                                        <path id="XMLID_19_" d="M64.167,0H27.5A27.5,27.5,0,0,0,0,27.5V64.167a27.5,27.5,0,0,0,27.5,27.5H64.167a27.5,27.5,0,0,0,27.5-27.5V27.5A27.5,27.5,0,0,0,64.167,0Z" />
-                                        <path id="XMLID_20_" d="M224.167,160H187.5A27.5,27.5,0,0,0,160,187.5v36.667a27.5,27.5,0,0,0,27.5,27.5h36.667a27.5,27.5,0,0,0,27.5-27.5V187.5A27.5,27.5,0,0,0,224.167,160Z" transform="translate(133.333 133.333)" />
-                                        <path id="XMLID_21_" d="M144.167,160H107.5A27.5,27.5,0,0,0,80,187.5v36.667a27.5,27.5,0,0,0,27.5,27.5h36.667a27.5,27.5,0,0,0,27.5-27.5V187.5A27.5,27.5,0,0,0,144.167,160Z" transform="translate(66.667 133.333)" />
-                                        <path id="XMLID_22_" d="M64.167,160H27.5A27.5,27.5,0,0,0,0,187.5v36.667a27.5,27.5,0,0,0,27.5,27.5H64.167a27.5,27.5,0,0,0,27.5-27.5V187.5A27.5,27.5,0,0,0,64.167,160Z" transform="translate(0 133.333)" />
-                                        <path id="XMLID_23_" d="M224.167,80H187.5A27.5,27.5,0,0,0,160,107.5v36.667a27.5,27.5,0,0,0,27.5,27.5h36.667a27.5,27.5,0,0,0,27.5-27.5V107.5A27.5,27.5,0,0,0,224.167,80Z" transform="translate(133.333 66.667)" />
-                                        <path id="XMLID_24_" d="M144.167,80H107.5A27.5,27.5,0,0,0,80,107.5v36.667a27.5,27.5,0,0,0,27.5,27.5h36.667a27.5,27.5,0,0,0,27.5-27.5V107.5A27.5,27.5,0,0,0,144.167,80Z" transform="translate(66.667 66.667)" />
-                                        <path id="XMLID_25_" d="M64.167,80H27.5A27.5,27.5,0,0,0,0,107.5v36.667a27.5,27.5,0,0,0,27.5,27.5H64.167a27.5,27.5,0,0,0,27.5-27.5V107.5A27.5,27.5,0,0,0,64.167,80Z" transform="translate(0 66.667)" />
+                                   <g id="XMLID_17_" transform="translate(4334 1665)">
+                                        <path id="XMLID_18_" d="M136.672,174.175A46.722,46.722,0,0,1,90,127.506a17.5,17.5,0,1,0-35,0,81.761,81.761,0,0,0,81.67,81.669,17.5,17.5,0,1,0,0-35Z" transform="translate(9.167 18.334)" />
+                                        <path id="XMLID_19_" d="M379.874,355.126,260.551,235.8a145.127,145.127,0,0,0,31.129-89.963C291.68,65.423,226.256,0,145.839,0S0,65.423,0,145.839,65.423,291.678,145.839,291.678A145.129,145.129,0,0,0,235.8,260.551L355.126,379.874a17.5,17.5,0,0,0,24.747-24.747ZM35,145.839A110.84,110.84,0,1,1,145.839,256.678,110.965,110.965,0,0,1,35,145.839Z" />
                                    </g>
                               </g>
                          </svg>
                     </a>
+               </div>
 
+               <div className="sidebar-middle">
                     <a href="/popular">
                          <svg className="popular-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 385 388">
                               <g id="Group_2" data-name="Group 2" transform="translate(-4457 -1751)">
@@ -63,9 +58,7 @@ function Sidebar() {
                               </g>
                          </svg>
                     </a>
-               </div>
 
-               <div className="sidebar-middle">
                     <a href="/genres">
                          <svg className="genre-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 385 385">
                               <g id="Group_2" data-name="Group 2" transform="translate(-4442 -1720)">

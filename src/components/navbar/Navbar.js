@@ -3,9 +3,7 @@ import "./Navbar.css"
 function Navbar() {
      return (
           <div className="navbar">
-               <div className="nav-search">
-                    <input type="input" className="search-bar" placeholder="Search" name="nsearchme" id='search' />
-               </div>
+               <a href="/" className="navbar-title">AniWare</a>
 
                <div className="nav-links">
                     <svg className="modes-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 385 385">
@@ -20,8 +18,6 @@ function Navbar() {
                               </g>
                          </g>
                     </svg>
-
-                    <h3 className="navbar-title">AniWare</h3>
                </div>
           </div >
      )

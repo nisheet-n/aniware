@@ -8,6 +8,7 @@ import Latest from "./components/pages/latest/Latest";
 import AnimeInfo from "./components/pages/anime-info/AnimeInfo";
 import Genres from "./components/pages/genres/Genres";
 import GenreAnime from "./components/pages/genres/GenreAnime";
+import Search from "./components/pages/search/Search";
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 						<Route path="/anime/*" element={<AnimeInfo />} />
 						<Route path="/genres/" element={<Genres />} />
 						<Route path="/genre/*" element={<GenreAnime />} />
+						<Route path="/search" element={<Search />} exact />
 					</Routes>
 				</BrowserRouter>
 			</div>
