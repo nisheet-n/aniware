@@ -1,13 +1,15 @@
 .genre-anime-card {
      text-decoration: none;
-     color: #fff;
+     color: white;
      width: 12.5rem;
      margin: 1rem 0.25rem;
-     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
-     backdrop-filter: blur(5px);
      display: flex;
      flex-direction: column;
      align-items: center;
+}
+
+.light .genre-anime-card {
+     color: black;
 }
 
 .genre-anime-card:hover {
@@ -46,6 +48,10 @@
      height: 100%;
      background-color: black;
      opacity: 0.5;
+}
+
+.light .genre-anime-poster img:hover {
+     background-color: white;
 }
 
 .genre-anime-info {

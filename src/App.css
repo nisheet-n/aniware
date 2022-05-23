@@ -11,6 +11,17 @@ body {
 	font-family: 'Noto Sans', sans-serif;
 }
 
+.light {
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	-ms-transition: .5s all;
+	-o-transition: .5s all;
+	transition: .5s all;
+
+	background: white;
+	color: #2F2F33;
+}
+
 .App {
 	display: flex;
 }

@@ -10,6 +10,12 @@
 	mask-image: linear-gradient(to top, transparent 5%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
 }
 
+.light .anime-header {
+	-webkit-mask-image: linear-gradient(to top, transparent 5%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+	mask-image: linear-gradient(to top, transparent 5%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+
+}
+
 .anime-background {
 	position: absolute;
 	background-image: url(./anime-bg.jpg);
@@ -18,6 +24,13 @@
 	mask-image: linear-gradient(to left, transparent 5%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
 	width: 75vw;
 	height: 100vh;
+}
+
+.light .anime-background {
+	background-image: url(./anime-bg-light.jpg);
+	-webkit-mask-image: linear-gradient(to left, transparent 5%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+	mask-image: linear-gradient(to left, transparent 5%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+
 }
 
 .anime-title-type {
@@ -33,11 +46,19 @@
 	color: white;
 }
 
+.light .anime-title {
+	color: black;
+}
+
 .anime-type {
 	margin: auto 0 10rem 5rem;
-	color: azure;
+	color: white;
 	font-size: 1.5rem;
 	font-weight: bolder;
+}
+
+.light .anime-type {
+	color: black;
 }
 
 .anime-poster {
@@ -47,6 +68,11 @@
 	-webkit-mask-image: linear-gradient(to right, transparent 1%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 1) 100%);
 	mask-image: linear-gradient(to right, transparent 1%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 1) 100%);
 	height: 100%;
+}
+
+.light .anime-poster {
+	-webkit-mask-image: linear-gradient(to right, transparent 1%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
+	mask-image: linear-gradient(to right, transparent 1%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
 }
 
 .anime-details {
@@ -79,6 +105,10 @@
 	cursor: pointer;
 }
 
+.light .fa-bookmark, .light .fa-bookmark-o {
+	color: black;
+}
+
 .anime-genres {
 	display: flex;
 	flex-wrap: wrap;
@@ -93,8 +123,16 @@
 	margin-right: 0.5rem;
 }
 
+.light .anime-genre {
+	color: rgba(0, 0, 0, 0.5);
+}
+
 .anime-genre:hover {
 	color: rgba(255, 255, 255, 0.75);
+}
+
+.light .anime-genre:hover {
+	color: rgba(0, 0, 0, 0.75);
 }
 
 .anime-desc {
@@ -104,11 +142,19 @@
 	color: rgba(255, 255, 255, 0.9);
 }
 
+.light .anime-desc {
+	color: rgba(0, 0, 0, 0.9);
+}
+
 .anime-year {
 	margin-top: 1rem;
 	text-align: right;
 	color: rgba(255, 255, 255, 0.5);
 	font-size: 1.25rem;
+}
+
+.light .anime-year {
+	color: rgba(0, 0, 0, 0.5);
 }
 
 hr {
@@ -117,9 +163,18 @@ hr {
 	border: 0.1rem solid #2D2F3E;
 }
 
+.light hr {
+	background: #E1E1E5;
+	border: 0.1rem solid #E1E1E5;
+}
+
 .anime-names {
 	margin: 0.25rem 0;
 	color: rgba(255, 255, 255, 0.75);
+}
+
+.light .anime-names {
+	color: rgba(0, 0, 0, 0.75);
 }
 
 .episode-list {
@@ -151,6 +206,11 @@ hr {
 	color: rgba(255, 255, 255, 0.75);
 }
 
+.light .episode {
+	background: #E1E1E5;
+	color: rgba(0, 0, 0, 0.75);
+}
+
 .episode:hover {
 	-webkit-transition: .25s all;
 	-moz-transition: .25s all;
@@ -160,4 +220,9 @@ hr {
 
 	color: #2D2F3E;
 	background: white;
+}
+
+.light .episode:hover {
+	color: #E1E1E5;
+	background: black;
 }

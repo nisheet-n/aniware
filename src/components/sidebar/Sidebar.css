@@ -11,6 +11,10 @@
      z-index: 999;
 }
 
+.light .sidebar {
+     border-right: 0.1rem solid #E1E1E5;
+}
+
 a {
      text-decoration: none;
 }
@@ -28,6 +32,17 @@ svg {
      margin: 0.5rem;
      background: #2D2F3E;
      border-radius: 0.5rem;
+}
+
+.light svg {
+     background: white;
+     fill: #2D2F3E;
+     box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+
+.light svg:hover {
+     fill: white;
+     background: #2D2F3E;
 }
 
 svg:hover {
@@ -50,9 +65,22 @@ svg:hover {
      border-bottom: 0.1rem solid #303143;
 }
 
+.light .sidebar-top {
+     border-bottom: 0.1rem solid #E1E1E5;
+}
+
 .toggle-icon {
      margin-bottom: 1rem;
      background: none;
+}
+
+.light .toggle-icon {
+     box-shadow: none;
+}
+
+.light .toggle-icon:hover {
+     background: white;
+     fill: #2D2F3E;
 }
 
 .toggle-icon:hover {
@@ -76,4 +104,8 @@ svg:hover {
      justify-content: flex-end;
      padding: 1rem 0;
      border-top: 0.1rem solid #303143;
+}
+
+.light .sidebar-bottom {
+     border-top: 0.1rem solid #E1E1E5;
 }

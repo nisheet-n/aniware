@@ -5,8 +5,11 @@
 	position: sticky;
 	top: 0;
 	z-index: 999;
-	background: #15172850;
 	backdrop-filter: blur(20px);
+}
+
+.light .navbar {
+	color: #1F1C2E;
 }
 
 .nav-links {
@@ -20,4 +23,25 @@
 	color: blueviolet;
 	font-size: 1.5rem;
 	font-weight: bolder;
+}
+
+.light-mode {
+	fill: #2D2F3E;
+	background: white;
+	box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.25);
+}
+
+.light .dark-mode {
+	fill: #E1E1E5;
+	background: black;
+}
+
+.light-mode:hover {
+	fill: white;
+	background: #2D2F3E;
+}
+
+.light .dark-mode:hover {
+	fill: black;
+	background: #E1E1E5;
 }
