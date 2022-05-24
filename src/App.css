@@ -30,6 +30,68 @@ body {
 	width: 100%;
 }
 
+/* Styles for Paging Section */
+.page-row {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 1rem;
+}
+
+.page-heading {
+	font-weight: bolder;
+}
+
+.page-link, .page-current {
+	-webkit-transition: .25s all;
+	-moz-transition: .25s all;
+	-ms-transition: .25s all;
+	-o-transition: .25s all;
+	transition: .25s all;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-left: 1rem;
+	color: white;
+	background: #2D2F3E;
+	height: 2.5rem;
+	width: 2.5rem;
+	border-radius: 0.25rem;
+	border: 0.1rem solid transparent;
+	cursor: pointer;
+}
+
+.light .page-link, .light .page-current {
+	color: #2D2F3E;
+	background: white;
+	box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.25);
+}
+
+.page-link:hover {
+	color: #2D2F3E;
+	background: white;
+}
+
+.light .page-link:hover {
+	color: white;
+	background: #2D2F3E;
+}
+
+.page-current {
+	cursor: inherit;
+	background: none;
+	font-weight: bolder;
+	border: 0.1rem solid #E1E1E5;
+	box-shadow: none;
+}
+
+.light .page-current {
+	border: 0.1rem solid #2D2F3E;
+}
+
+/* Styles for Scrollbar */
 html::-webkit-scrollbar {
 	width: 0.25rem;
 }

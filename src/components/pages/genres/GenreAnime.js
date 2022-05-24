@@ -8,7 +8,19 @@ import GenreAnimeCard from "./GenreAnimeCard"
 function GenreAnime() {
      const location = useLocation();
      const genre = location.pathname.split("/genre/")[1]
-     const finalUrl = `https://gogoanime.herokuapp.com/genre/${genre}`
+
+     const [page, setPage] = useState(1);
+
+     function decrement() {
+          if (page === 1)
+               return
+          setPage(page - 1)
+     }
+     function increment() {
+          setPage(page + 1)
+     }
+
+     const finalUrl = `https://gogoanime.herokuapp.com/genre/${genre}?page=${page}`
 
      const [animeData, setAnimeData] = useState([]);
 
@@ -29,6 +41,12 @@ function GenreAnime() {
                               < GenreAnimeCard key={anime.animeid} title={anime.animeTitle} year={anime.releasedDate} poster={anime.animeImg} url={anime.animeId} />
                          ))
                     }
+               </div>
+               <div className="page-row">
+                    <p className="page-heading">Page:</p>
+                    <p onClick={decrement} className="page-link">-</p>
+                    <p className="page-current">{page}</p>
+                    <p onClick={increment} className="page-link">+</p>
                </div>
           </div>
      )
