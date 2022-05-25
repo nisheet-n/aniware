@@ -1,14 +1,15 @@
-.popular-page {
+.animes-page {
 	padding: 0 2rem;
 	margin-bottom: 1.5rem;
 }
 
-.popular-heading {
+.animes-heading {
 	padding: 0.5rem 0;
 	font-weight: bolder;
+	text-transform: capitalize;
 }
 
-.popular-rows {
+.animes-rows {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;

@@ -30,6 +30,50 @@ body {
 	width: 100%;
 }
 
+/* Styles for Category Section */
+.category-row {
+	display: flex;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.category-row p {
+	-webkit-transition: .25s all;
+	-moz-transition: .25s all;
+	-ms-transition: .25s all;
+	-o-transition: .25s all;
+	transition: .25s all;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-right: 1rem;
+	color: white;
+	background: #2D2F3E;
+	height: 2.5rem;
+	width: 10rem;
+	border-radius: 0.25rem;
+	border: 0.1rem solid transparent;
+	cursor: pointer;
+}
+
+.light .category-row p {
+	color: #2D2F3E;
+	background: white;
+	box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+
+.category-row p:hover {
+	color: #2D2F3E;
+	background: white;
+}
+
+.light .category-row p:hover {
+	color: white;
+	background: #2D2F3E;
+}
+
 /* Styles for Paging Section */
 .page-row {
 	display: flex;

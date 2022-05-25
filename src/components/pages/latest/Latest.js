@@ -5,6 +5,18 @@ import "./Latest.css"
 import LatestCard from "./LatestCard"
 
 function Latest() {
+     const [lang, setLang] = useState(1);
+
+     function engSub() {
+          setLang(1)
+     }
+     function engDub() {
+          setLang(2)
+     }
+     function chinSub() {
+          setLang(3)
+     }
+
      const [page, setPage] = useState(1);
 
      function decrement() {
@@ -16,7 +28,7 @@ function Latest() {
           setPage(page + 1)
      }
 
-     const finalUrl = `https://gogoanime.herokuapp.com/recent-release?page=${page}`
+     const finalUrl = `https://gogoanime.herokuapp.com/recent-release?type=${lang}&page=${page}`
 
      const [animeData, setAnimeData] = useState([]);
 
@@ -31,6 +43,12 @@ function Latest() {
      return (
           <div className="latest-page">
                <h1 className="latest-heading">Latest Releases</h1>
+               <div className="category-row">
+                    <p onClick={engSub} >English Subtitles</p>
+                    <p onClick={engDub} >English Dub</p>
+                    <p onClick={chinSub} >Chinese Anime</p>
+               </div>
+
                <div className="latest-rows">
                     {
                          animeData.map((anime) => (
@@ -38,6 +56,7 @@ function Latest() {
                          ))
                     }
                </div>
+
                <div className="page-row">
                     <p className="page-heading">Page:</p>
                     <p onClick={decrement} className="page-link">-</p>

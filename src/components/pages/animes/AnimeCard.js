@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-import "./PopularCard.css"
+import "./AnimeCard.css"
 
-function PopularCard({ title, year, poster, url }) {
+function AnimeCard({ title, yearOrEp, poster, url }) {
      var length = 30;
      var finalTitle = title.substring(0, length);
      if (title.length > length) {
@@ -17,10 +17,10 @@ function PopularCard({ title, year, poster, url }) {
 
                <div className="popular-info">
                     <div className="popular-title">{finalTitle}</div>
-                    <div className="popular-year">{year}</div>
+                    <div className="popular-year">{yearOrEp}</div>
                </div>
           </Link >
      )
 }
 
-export default PopularCard
+export default AnimeCard

@@ -35,7 +35,7 @@ function Sidebar() {
                </div>
 
                <div className="sidebar-middle">
-                    <a href="/popular">
+                    <a href="/animes">
                          <svg className="popular-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 385 388">
                               <g id="Group_2" data-name="Group 2" transform="translate(-4457 -1751)">
                                    <g id="Group_1" data-name="Group 1" transform="translate(0 107)">
