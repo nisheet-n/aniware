@@ -2,12 +2,13 @@ import axios from "axios"
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+import { BASE_URL } from "../../../utils/BaseURL"
 import './AnimeInfo.css'
 
 function AnimeInfo() {
      const location = useLocation();
      const url = location.pathname.split("/anime/")[1]
-     const finalUrl = `https://gogoanime.herokuapp.com/anime-details/${url}`
+     const finalUrl = BASE_URL + `anime-details/${url}`
 
      const [animeData, setAnimeData] = useState([]);
      const [genres, setGenres] = useState([]);

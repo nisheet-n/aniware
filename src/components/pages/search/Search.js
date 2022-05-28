@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+import { BASE_URL } from "../../../utils/BaseURL"
 import "./Search.css"
 
 function Search() {
@@ -11,7 +12,7 @@ function Search() {
      const [query, setQuery] = useState("")
 
      useEffect(() => {
-          fetch(`https://gogoanime.herokuapp.com/search?keyw=${query}`)
+          fetch(BASE_URL + `search?keyw=${query}`)
                .then((res) => res.json())
                .then(
                     (result) => {

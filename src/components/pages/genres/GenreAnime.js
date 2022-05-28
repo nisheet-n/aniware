@@ -2,6 +2,7 @@ import axios from "axios"
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+import { BASE_URL } from "../../../utils/BaseURL"
 import "./GenreAnime.css"
 import GenreAnimeCard from "./GenreAnimeCard"
 
@@ -20,7 +21,7 @@ function GenreAnime() {
           setPage(page + 1)
      }
 
-     const finalUrl = `https://gogoanime.herokuapp.com/genre/${genre}?page=${page}`
+     const finalUrl = BASE_URL + `genre/${genre}?page=${page}`
 
      const [animeData, setAnimeData] = useState([]);
 

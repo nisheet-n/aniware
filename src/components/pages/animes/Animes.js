@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from 'axios';
 
+import { BASE_URL } from "../../../utils/BaseURL"
 import "./Animes.css"
 import AnimeCard from "./AnimeCard"
 
@@ -28,7 +29,7 @@ function Animes() {
           setPage(page + 1)
      }
 
-     const finalUrl = `https://gogoanime.herokuapp.com/${category}?page=${page}`
+     const finalUrl = BASE_URL + `${category}?page=${page}`
 
      const [animeData, setAnimeData] = useState([]);
 

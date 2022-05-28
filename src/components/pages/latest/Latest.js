@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from 'axios';
 
+import { BASE_URL } from "../../../utils/BaseURL"
 import "./Latest.css"
 import LatestCard from "./LatestCard"
 
@@ -28,7 +29,7 @@ function Latest() {
           setPage(page + 1)
      }
 
-     const finalUrl = `https://gogoanime.herokuapp.com/recent-release?type=${lang}&page=${page}`
+     const finalUrl = BASE_URL + `recent-release?type=${lang}&page=${page}`
 
      const [animeData, setAnimeData] = useState([]);
 
