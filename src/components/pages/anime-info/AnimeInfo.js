@@ -1,8 +1,8 @@
 import axios from "axios"
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-
-import { BASE_URL } from "../../../utils/BaseURL"
+import { WishAnimes } from "../wishlist/Wishlist"
+import { BASE_URL } from "../../../utils/Constants"
 import './AnimeInfo.css'
 
 function AnimeInfo() {
@@ -12,6 +12,7 @@ function AnimeInfo() {
 
      const [animeData, setAnimeData] = useState([]);
      const [genres, setGenres] = useState([]);
+     const [wish, setWish] = useState(0);
      const [episodes, setEpisodes] = useState([]);
 
      useEffect(() => {
@@ -24,7 +25,20 @@ function AnimeInfo() {
           getAnime();
      }, [finalUrl])
 
-     const isSaved = 0;
+     function wishAnime() {
+          if (WishAnimes.includes(url)) {
+               setWish(0);
+               const index = WishAnimes.indexOf(url);
+               if (index > -1) {
+                    WishAnimes.splice(index, 1);
+               }
+          }
+          else {
+               setWish(1);
+               WishAnimes.push(url)
+          }
+          window.localStorage.setItem('wishAnime', WishAnimes)
+     }
 
      return (
           <div className="anime-info">
@@ -43,10 +57,12 @@ function AnimeInfo() {
                     <div className="anime-status-bar">
                          <p className="anime-episodes">Episodes: {animeData.totalEpisodes}</p>
                          <p className="anime-status">{animeData.status}</p>
-
-                         {isSaved
-                              ? <i className="fa fa-bookmark"></i>
-                              : <i className="fa fa-bookmark-o"></i>
+                         {
+                              WishAnimes.includes(url) ? (
+                                   <i onClick={wishAnime} className="fa fa-bookmark"></i>
+                              ) : (
+                                   <i onClick={wishAnime} className="fa fa-bookmark-o"></i>
+                              )
                          }
                     </div>
 

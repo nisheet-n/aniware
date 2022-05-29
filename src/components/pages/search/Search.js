@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import { BASE_URL } from "../../../utils/BaseURL"
+import { BASE_URL } from "../../../utils/Constants"
 import "./Search.css"
 
 function Search() {

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from 'axios';
 
-import { BASE_URL } from "../../../utils/BaseURL"
+import { BASE_URL } from "../../../utils/Constants"
 import "./Latest.css"
 import LatestCard from "./LatestCard"
 

@@ -1,0 +1,23 @@
+.wish-page {
+	padding: 0 2rem;
+	margin-bottom: 1.5rem;
+}
+
+.wish-heading {
+	padding: 0.5rem 0;
+	font-weight: bolder;
+	text-transform: capitalize;
+}
+
+.wish-error {
+	padding: 0.5rem 0;
+	font-style: italic;
+	font-size: 1.25rem;
+}
+
+.wish-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
