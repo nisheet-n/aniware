@@ -10,6 +10,7 @@ import Genres from "./components/pages/genres/Genres";
 import GenreAnime from "./components/pages/genres/GenreAnime";
 import Search from "./components/pages/search/Search";
 import Wishlist from "./components/pages/wishlist/Wishlist";
+import About from "./components/pages/about/About";
 
 function App() {
 	return (
@@ -27,6 +28,7 @@ function App() {
 						<Route path="/genre/*" element={<GenreAnime />} />
 						<Route path="/search" element={<Search />} exact />
 						<Route path="/wishlist" element={<Wishlist />} exact />
+						<Route path="/about" element={<About/>}/>
 					</Routes>
 				</BrowserRouter>
 			</div>

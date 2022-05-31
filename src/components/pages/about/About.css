@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;600&display=swap');
+
+ /* .about-row{
+    display: block;
+   margin-left: 10%;
+   margin-right: 10%;
+   /* margin-top: auto;
+   margin-bottom: auto; 
+   width: 60%;
+   
+}  */
+
+.aboutcard{
+    color: rgb(246, 245, 247);
+    background: #303143;
+    height: 500px;
+    width: 1050px; 
+    align-items:center;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto; 
+    width: 85%;
+    border-radius: 5px;
+    /* margin: 10%; */
+    font-family: 'Noto Sans', sans-serif;
+    /* box-shadow: 0px 0px 25px 0px rgba(86, 13, 203, 0.404);
+	backdrop-filter:blur(5px); */
+} 
+
+.title{
+    text-align: center;
+    height: 100px;
+}
+
+.main{
+    text-align: center;
+}
+
+
+.light .aboutcard{
+     color: #303143;
+    background: #d2d4f3;
+    height: 500px;
+    width: 1050px; 
+    align-items:center;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto; 
+    width: 85%;
+    border-radius: 5px;
+    font-family: 'Noto Sans', sans-serif;
+     box-shadow: 0px 0px 25px 0px rgba(86, 13, 203, 0.587);
+	backdrop-filter:blur(5px); 
+}
+
