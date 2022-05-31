@@ -1,0 +1,38 @@
+.homepage-category {
+     margin: 3rem 0;
+}
+
+.homepage-category-header {
+     display: flex;
+     align-items: center;
+     margin-bottom: 1rem;
+}
+
+.homepage-row-title {
+     padding: 0.5rem 0;
+     font-weight: bolder;
+     text-transform: capitalize;
+}
+
+.homepage-row-button {
+     margin-left: auto;
+     margin-right: 0;
+     text-decoration: none;
+     font-weight: bolder;
+     color: white;
+     opacity: 50%;
+}
+
+.light .homepage-row-button {
+     color: black;
+}
+
+.homepage-row-button:hover {
+     opacity: 100%;
+}
+
+.homepage-category-row {
+     display: flex;
+     justify-content: flex-start;
+     flex-wrap: wrap;
+}
