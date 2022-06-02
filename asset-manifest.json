@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/aniware/static/css/main.7d1cc6f4.css",
-    "main.js": "/aniware/static/js/main.d265d693.js",
+    "main.js": "/aniware/static/js/main.e34e0835.js",
     "static/js/787.193a5e12.chunk.js": "/aniware/static/js/787.193a5e12.chunk.js",
     "static/media/anime-bg.jpg": "/aniware/static/media/anime-bg.bb0234fa65c5b488cb41.jpg",
     "static/media/anime-bg-light.jpg": "/aniware/static/media/anime-bg-light.24dc3af2160e3f8e7ca8.jpg",
     "index.html": "/aniware/index.html",
     "main.7d1cc6f4.css.map": "/aniware/static/css/main.7d1cc6f4.css.map",
-    "main.d265d693.js.map": "/aniware/static/js/main.d265d693.js.map",
+    "main.e34e0835.js.map": "/aniware/static/js/main.e34e0835.js.map",
     "787.193a5e12.chunk.js.map": "/aniware/static/js/787.193a5e12.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7d1cc6f4.css",
-    "static/js/main.d265d693.js"
+    "static/js/main.e34e0835.js"
   ]
 }
