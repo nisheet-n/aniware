@@ -22,7 +22,7 @@ You can also add your animes in the wishlist without even the need of making an 
 <!-- <p align="center"> -->
  <h4 align="center">Special thanks to <a target="_blank" href="https://github.com/riimuru">Riimuru ✨</a></h4>
  <br/>
-<p align="center">Aniware: Anime Anywhere <br/> Made With 💝 For Anime Fans<p/>
+<p align="center"><a href="https://ani-ware.herokuapp.com/" target="_blank">Aniware: Anime Anywhere</a><br/> Made With 💝 For Anime Fans<p/>
 <!-- <p align="center">Made With 💝 For Anime Fans <p/> -->
 <br/>
 <!-- <h4 align="center">Contribute for more</h4> -->
